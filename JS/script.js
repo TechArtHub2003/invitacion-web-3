@@ -55,7 +55,7 @@ form?.addEventListener('submit', async (e) => {
   btn.textContent = "Enviando...";
 
   try {
-    const res = await fetch('https://script.google.com/macros/s/AKfycbwkaeaIIue3QdLXMvFPMMawt2f7Gi11iytL_V2AsUF9vitZwgKAgHpvqmHUUQqQuJRt/exec', { // Reemplaza esto con tu URL real
+    const res = await fetch('https://script.google.com/macros/s/AKfycbwkaeaIIue3QdLXMvFPMMawt2f7Gi11iytL_V2AsUF9vitZwgKAgHpvqmHUUQqQuJRt/exec', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -65,7 +65,7 @@ form?.addEventListener('submit', async (e) => {
         correo: data.get("correo"),
         invitados: data.get("invitados"),
         menu: data.get("menu"),
-        secret: "12345" // misma clave que en Apps Script
+        secret: "12345" // debe coincidir con tu script en Google
       })
     });
 
