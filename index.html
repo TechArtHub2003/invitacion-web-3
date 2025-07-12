@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Invitación digital al 25º aniversario de Carla y Pedro. Acompáñanos a celebrar una historia de amor duradera en un evento inolvidable.">
+  <title>25º Aniversario – Carla & Pedro</title>
+
+  <!-- Fuentes premium -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/CSS/estilos.css">
+
+  <!-- AOS (animate on scroll) -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css"/>
+
+  <!-- Swiper (galería) -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@11/swiper-bundle.min.css"/>
+
+  <!-- Favicon / meta OG -->
+  <link rel="icon" href="assets/favicon.png">
+  <meta property="og:title" content="Invitación Carla & Pedro – 25 años">
+</head>
+<body>
+<header class="hero">
+  <video autoplay muted loop playsinline class="hero-video">
+    <source src="assets/hero.mp4" type="video/mp4">
+  </video>
+  <div class="overlay">
+    <h1 class="titulo" data-aos="fade-down">Carla &amp; Pedro</h1>
+    <p class="subtitulo" data-aos="fade-up" data-aos-delay="300">Celebramos 25 años de amor</p>
+  </div>
+</header>
+
+<main>
+  <!-- CUENTA REGRESIVA -->
+  <section class="countdown section" id="cuenta">
+    <h2 data-aos="fade-right">Domingo 3 de agosto · 11:00 AM</h2>
+    <div id="timer" data-date="2025-08-03T11:00:00" data-aos="zoom-in"></div>
+  </section>
+
+  <!-- LUGAR + MAPA -->
+  <section class="venue section">
+    <h2 data-aos="fade-right">Gran Salón Imperial · CDMX</h2>
+    <center><p data-aos="fade-right" data-aos-delay="200">
+      Av. Reforma 123, Col. Centro Histórico
+    </p></center><br>
+    <div class="map-wrap" data-aos="fade-up">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!..."
+        loading="lazy" title="Mapa recinto">
+      </iframe>
+    </div>
+  </section>
+
+  <!-- AGENDA -->
+  <section class="agenda section" id="agenda">
+    <h2 data-aos="fade-right">Programa del día</h2>
+    <ul>
+      <li data-aos="fade-up"><span>11:00</span> Recepción</li>
+      <li data-aos="fade-up" data-aos-delay="100"><span>12:00</span> Ceremonia</li>
+      <li data-aos="fade-up" data-aos-delay="200"><span>13:30</span> Banquete</li>
+      <li data-aos="fade-up" data-aos-delay="300"><span>15:00</span> Fotografías</li>
+    </ul>
+  </section>
+
+  <!-- GALERÍA -->
+  <section class="gallery section">
+    <h2 data-aos="fade-right">Nuestros momentos</h2>
+    <div class="swiper" data-aos="zoom-in">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="assets/gal1.jpg" alt="Foto 1 - Recuerdo" loading="lazy"></div>
+        <div class="swiper-slide"><img src="assets/gal2.jpg" alt="Foto 2 - Celebración" loading="lazy"></div>
+        <div class="swiper-slide"><img src="assets/gal3.jpg" alt="Foto 3 - Familia" loading="lazy"></div>
+        <div class="swiper-slide"><img src="assets/gal4.jpg" alt="Foto 4 - Amigos" loading="lazy"></div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+
+  <!-- REGALOS -->
+  <section class="gifts section" id="regalos">
+    <h2 data-aos="fade-right">Lista de regalos</h2>
+    <center>
+          <div class="gift-links" data-aos="fade-up">
+      <a href="https://amazon.com/..." target="_blank" aria-label="Lista de regalos en Amazon">
+        <img src="assets/amazon.png" alt="Logo Amazon">
+        Amazon
+      </a>
+      <a href="https://www.liverpool.com.mx/..." target="_blank" aria-label="Lista de regalos en Liverpool">
+        <img src="assets/liverpool.png" alt="Logo Liverpool">
+        Liverpool
+      </a>
+    </div>
+    </center>
+  </section>
+
+  <!-- CONFIRMACIÓN -->
+  <section class="rsvp section" id="rsvp">
+    <h2 data-aos="fade-right">Confirma tu asistencia</h2>
+    <form id="rsvpForm" data-aos="fade-up">
+      <input type="text" name="nombre" placeholder="Nombre completo" required>
+      <input type="email" name="correo" placeholder="Correo electrónico" required>
+      <input type="number" name="invitados" placeholder="Número de invitados" min="0" max="5" required>
+      <select name="menu" required>
+        <option value="" disabled selected>Menú preferido</option>
+        <option value="normal">Normal</option>
+        <option value="vegetariano">Vegetariano</option>
+        <option value="infantil">Infantil</option>
+      </select>
+      <button type="submit" class="btn-primary">Enviar</button>
+      <p class="form-msg" hidden>Gracias por confirmar ✨</p>
+    </form>
+  </section>
+   <!-- https://script.google.com/macros/s/AKfycbwkaeaIIue3QdLXMvFPMMawt2f7Gi11iytL_V2AsUF9vitZwgKAgHpvqmHUUQqQuJRt/exec -->
+  <!-- CONTACTO -->
+  <section class="contact section">
+    <h2 data-aos="fade-right">Contacto</h2>
+    <center>
+          <div class="contact-links" data-aos="fade-up">
+      <a href="https://wa.me/5215512345678" class="btn-whatsapp" aria-label="Contactar por WhatsApp">
+        <img src="assets/whatsapp.png" alt="WhatsApp">
+      </a>
+    </div>
+    </center>
+  </section>
+
+  <!-- VESTIMENTA -->
+  <section class="dresscode section">
+    <h2 data-aos="fade-right">Código de vestimenta</h2>
+    <center>
+          <div class="dress-box" data-aos="zoom-in">
+      <img src="assets/dress-formal.png" alt="Ejemplo de traje formal" loading="lazy">
+      <p>Formal / Etiqueta</p>
+    </div>
+    </center>
+  </section>
+
+  <!-- QR 
+  <section class="qr section">
+    <h2 data-aos="fade-right">Escanea para ver la invitación</h2>
+    <img src="assets/qr.png" alt="Código QR para acceder a la invitación" width="150" height="150" data-aos="zoom-in">
+  </section> -->
+
+  <!-- REDES -->
+  <section class="social section">
+    <h2 data-aos="fade-right">Síguenos y comparte</h2>
+    <center>
+          <div class="icons" data-aos="fade-up">
+      <a href="https://instagram.com/" target="_blank" class="ig" aria-label="Instagram"></a>
+      <a href="https://facebook.com/" target="_blank" class="fb" aria-label="Facebook"></a>
+      <a href="https://tiktok.com/" target="_blank" class="tt" aria-label="TikTok"></a>
+    </div>
+    </center> <br>
+    <p class="hashtag" data-aos="fade-up" data-aos-delay="200">Usa <strong>#PedroCarla25</strong></p>
+  </section>
+</main>
+
+<footer>
+  <small>© 2025 Carla & Pedro · Diseñado con cariño</small>
+</footer>
+
+<!-- JS PLUGINS -->
+<script src="https://unpkg.com/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script src="/JS/script.js"></script>
+</body>
+</html>
