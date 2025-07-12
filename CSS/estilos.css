@@ -189,9 +189,9 @@ input, select {
 .icons a:hover {
   transform: scale(1.1);
 }
-.ig { background-image: url(/assets/ig.svg); }
-.fb { background-image: url(/assets/fb.svg); }
-.tt { background-image: url(/assets/tk.svg); }
+.ig { background-image: url(assets/ig.svg); }
+.fb { background-image: url(assets/fb.svg); }
+.tt { background-image: url(assets/tk.svg); }
 
 .contact-links a img {
   width: 90px;
